@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
   height: 100vh;
@@ -102,4 +103,110 @@ button :hover {
   color: white;
   text-transform: lowercase;
   
+=======
+
+body{
+  height: 100vh;
+  background-color: rgb(4, 52, 92);
+  background-size:  400%;
+}
+#error-page{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 15%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#error-page .content{
+  max-width: 600px;
+  text-align: center;
+}
+.content .logo {
+    position: absolute;
+    display: flex;
+    height: 185px;
+    align-items: center;
+    justify-content: center;
+}
+.content h2.header{
+  font-size: 10vw;
+  line-height: 1em;
+  position: relative;
+}
+.content h2.header::after{
+  position: absolute;
+  content: attr(data-text);
+  top: 53%;
+  left: 0;
+  right: 0;
+  background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+  background-size: 250%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.25);
+  animation: animate 5s ease-in-out infinite;
+}
+@keyframes animate {
+  0%{
+    background-position: 0 0;
+  }
+  25%{
+    background-position: 100% 0;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  75%{
+    background-position: 0% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+.content h4{
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2em;
+  max-width: 600px;
+  position: relative;
+}
+.content h4:after{
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.content p{
+  font-size: 1.2em;
+  color: #fdfbfb;
+}
+button {
+ width: 250px;
+ height: 35px;
+  font-weight: bold;
+  margin: 0 10px;
+  background-color: white;
+  border: 2px solid #042841;
+  color: #042841;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition-property: all;
+  
+}
+button :hover {
+  margin: 0 10px;
+  background-color: #042841;
+  border: 2px solid white;
+  color: white;
+  text-transform: lowercase;
+  
+>>>>>>> 1f5f348d5d748353be3ba222c6aeeeb00088ecd8
 }
